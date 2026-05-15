@@ -1,0 +1,183 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\kuleza ai project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\EnemyScripts\\EnemyClass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\EnemyScripts\\EnemyClass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\kuleza ai project\\assets\\scripts\\enemyscripts\\melleenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscripts\\melleenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\kuleza ai project\\assets\\scripts\\playerscripts\\camerafollows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerscripts\\camerafollows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\kuleza ai project\\assets\\scripts\\playerscripts\\playerlives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerscripts\\playerlives.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\kuleza ai project\\assets\\scripts\\playerscripts\\player respawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerscripts\\player respawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\kuleza ai project\\assets\\scripts\\playerscripts\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerscripts\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\kuleza ai project\\assets\\scripts\\enemyscripts\\rangedenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscripts\\rangedenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\kuleza ai project\\assets\\scripts\\playerscripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerscripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\user\\kuleza ai project\\assets\\scripts\\levelscripts\\spawingenemyclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelscripts\\spawingenemyclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\EnemyScripts\\EnemyClass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\EnemyScripts\\EnemyClass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayerMove.cs",
+              "DocumentMoniker": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\PlayerScripts\\PlayerMove.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerScripts\\PlayerMove.cs",
+              "ToolTip": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\PlayerScripts\\PlayerMove.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerScripts\\PlayerMove.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T08:12:28.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerStats.cs",
+              "DocumentMoniker": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\PlayerScripts\\PlayerStats.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerScripts\\PlayerStats.cs",
+              "ToolTip": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\PlayerScripts\\PlayerStats.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerScripts\\PlayerStats.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T15:38:41.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Player Respawn.cs",
+              "DocumentMoniker": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\PlayerScripts\\Player Respawn.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerScripts\\Player Respawn.cs",
+              "ToolTip": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\PlayerScripts\\Player Respawn.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerScripts\\Player Respawn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T15:35:39.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerLives.cs",
+              "DocumentMoniker": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\PlayerScripts\\PlayerLives.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerScripts\\PlayerLives.cs",
+              "ToolTip": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\PlayerScripts\\PlayerLives.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerScripts\\PlayerLives.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T15:34:59.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SpawingEnemyClass.cs",
+              "DocumentMoniker": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\LevelScripts\\SpawingEnemyClass.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelScripts\\SpawingEnemyClass.cs",
+              "ToolTip": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\LevelScripts\\SpawingEnemyClass.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LevelScripts\\SpawingEnemyClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T14:45:01.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RangedEnemy.cs",
+              "DocumentMoniker": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\EnemyScripts\\RangedEnemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScripts\\RangedEnemy.cs",
+              "ToolTip": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\EnemyScripts\\RangedEnemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyScripts\\RangedEnemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T14:41:51.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MelleEnemy.cs",
+              "DocumentMoniker": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\EnemyScripts\\MelleEnemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScripts\\MelleEnemy.cs",
+              "ToolTip": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\EnemyScripts\\MelleEnemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyScripts\\MelleEnemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T14:41:17.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CameraFollows.cs",
+              "DocumentMoniker": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\PlayerScripts\\CameraFollows.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerScripts\\CameraFollows.cs",
+              "ToolTip": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\PlayerScripts\\CameraFollows.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerScripts\\CameraFollows.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-10T14:52:26.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnemyClass.cs",
+              "DocumentMoniker": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\EnemyScripts\\EnemyClass.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScripts\\EnemyClass.cs",
+              "ToolTip": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\EnemyScripts\\EnemyClass.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyScripts\\EnemyClass.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAwwBUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T08:18:28.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EnemyClass.cs",
+              "DocumentMoniker": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\EnemyScripts\\EnemyClass.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyScripts\\EnemyClass.cs",
+              "ToolTip": "C:\\Users\\User\\kuleza ai project\\Assets\\Scripts\\EnemyScripts\\EnemyClass.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyScripts\\EnemyClass.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAxwBUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T14:26:34.194Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

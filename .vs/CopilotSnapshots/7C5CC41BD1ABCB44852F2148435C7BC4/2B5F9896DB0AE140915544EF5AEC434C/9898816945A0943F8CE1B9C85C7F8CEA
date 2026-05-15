@@ -1,0 +1,68 @@
+﻿using System.Net.WebClient;
+using System.Text.Json; // For JSON parsing
+using System.Threading.Tasks;
+using UnityEngine;
+
+public class OllamaFortuneGenerator : MonoBehaviour
+{
+    private string ollamaHost = "http://localhost:11434";
+    private string ollamaModel = "llama2";
+    private int numberOfFortunes = 3; // Initial number of fortunes
+
+    public int fortuneCountField;  // Serialized field to change the number of fortunes
+
+    public async Task<string[]> GetOllamaFortunes(int numFortunes)
+    {
+        WebClient client = new WebClient();
+        client.Proxy = null;
+
+        string jsonPayload = JsonSerializer.Serialize(new
+        {
+            model = ollamaModel,
+            prompt = "Generate " + numFortunes + " fortune cookie fortunes.",
+            max_tokens = 200 // Adjust as needed for longer fortunes
+        });
+
+        string response = await client.DownloadStringAsync(
+            $"{ollamaHost}/v1/chat/completions",
+            jsonPayload
+        );
+
+        // Parse the JSON response to extract the fortunes
+        try
+        {
+            var result = JsonDocument.Parse(response);
+            JsonElement fortunesElement = result.RootElement.GetArrayElement();
+            string[] fortunes = new string[numFortunes];
+            for (int i = 0; i < numFortunes; i++)
+            {
+                fortunes[i] = fortunesElement[i].Get<string>();
+            }
+            return fortunes;
+        }
+        catch (System.Exception ex)
+        {
+            Debug.LogError("Error parsing JSON response: " + ex.Message);
+            return null; // Or handle the error more gracefully
+        }
+    }
+
+    // Example usage – you'll call this from elsewhere in your script
+    public async void GenerateFortunes()
+    {
+        string[] fortunes = await GetOllamaFortunes(fortuneCountField);
+
+        if (fortunes != null)
+        {
+            Debug.Log("Fortune Cookie Fortunes:");
+            foreach (string fortune in fortunes)
+            {
+                Debug.Log(fortune);
+            }
+        }
+        else
+        {
+            Debug.LogError("Failed to generate fortunes.");
+        }
+    }
+}
