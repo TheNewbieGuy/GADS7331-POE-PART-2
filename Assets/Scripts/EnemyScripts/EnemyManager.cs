@@ -145,5 +145,31 @@ public class EnemyManager : MonoBehaviour
             EndSequenceUI.Instance
                 .PlayEndSequence(enemy.fortune);
         }
+        PlayerStats playerStats =
+            FindFirstObjectByType<PlayerStats>();
+
+        EnemyPowerup powerup =
+            enemy.GetComponent<EnemyPowerup>();
+
+        if (playerStats != null && powerup != null)
+        {
+            Debug.Log(
+                "POWERUP CHOSEN: " + powerup.powerUp
+            );
+
+            Debug.Log(
+                "BEFORE APPLY:"
+            );
+
+            playerStats.DebugPrintStats();
+
+            powerup.ApplyToPlayer(playerStats);
+
+            Debug.Log(
+                "AFTER APPLY:"
+            );
+
+            playerStats.DebugPrintStats();
+        }
     }
 }

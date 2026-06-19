@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.4/staging' branch; Version is '6000.4.6f1 (0b051c2e5d54) revision 722204'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Ivanj" at "2026-05-15T19:29:53.5034354Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Ivanj" at "2026-06-19T10:56:14.6496515Z"
 OS: 'Windows 11  (10.0.26200) CoreSingleLanguage' Language: 'en' Physical Memory: 16091 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-05-15T19:29:53Z
+Date: 2026-06-19T10:56:14Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.6f1\Editor\Unity.exe
@@ -15,11 +15,11 @@ C:\Program Files\Unity\Hub\Editor\6000.4.6f1\Editor\Unity.exe
 -name
 AssetImportWorker2
 -projectPath
-C:/Users/Ivanj/Documents/Unity Projects/kuleza ai project/kuleza ai project
+C:/Users/Ivanj/Documents/Unity Projects/GADS7331 POE PART 2/kuleza ai project
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-61197
+58265
 -licensingIpc
 LicenseClient-Ivanj
 -force-d3d12
@@ -31,8 +31,8 @@ LicenseClient-Ivanj
 1
 -name
 AssetImport
-Successfully changed project path to: C:/Users/Ivanj/Documents/Unity Projects/kuleza ai project/kuleza ai project
-C:/Users/Ivanj/Documents/Unity Projects/kuleza ai project/kuleza ai project
+Successfully changed project path to: C:/Users/Ivanj/Documents/Unity Projects/GADS7331 POE PART 2/kuleza ai project
+C:/Users/Ivanj/Documents/Unity Projects/GADS7331 POE PART 2/kuleza ai project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
@@ -68,12 +68,12 @@ C:/Users/Ivanj/Documents/Unity Projects/kuleza ai project/kuleza ai project
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [46548]  Target information:
+Player connection [38952]  Target information:
 
-Player connection [46548]  * "[IP] 192.168.8.125 [Port] 0 [Flags] 2 [Guid] 1659882277 [EditorId] 1659882277 [Version] 1048832 [Id] WindowsEditor(7,IvansLaptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [38952]  * "[IP] 192.168.8.125 [Port] 0 [Flags] 2 [Guid] 1716691559 [EditorId] 1716691559 [Version] 1048832 [Id] WindowsEditor(7,IvansLaptop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [46548] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [46548] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [38952] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [38952] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 13
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -85,10 +85,10 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 6.56 ms, found 8 plugins.
+Refreshing native plugins compatible for Editor in 4.52 ms, found 8 plugins.
 Initialize engine version: 6000.4.6f1 (0b051c2e5d54)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Ivanj/Documents/Unity Projects/kuleza ai project/kuleza ai project/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Ivanj/Documents/Unity Projects/GADS7331 POE PART 2/kuleza ai project/Assets
 Forcing GfxDevice: Direct3D 12
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 d3d12: failed to query info queue interface (0x80004002).
@@ -98,35 +98,18 @@ Direct3D:
     Vendor:          NVIDIA
     VRAM:            7910 MB
     App VRAM Budget: 7142 MB
-    Driver:          32.0.15.9636
+    Driver:          32.0.16.1047
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56544
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56948
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004445 seconds.
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Ivanj"
-[Licensing::IpcConnector] LicenseClient-Ivanj channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Ivanj-6000.4.6" at "2026-05-15T19:29:55.9503803Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 38104, path: "C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
-[Licensing::Module] LicensingClient has failed validation; ignoring
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              b8e90abefc354442b614d167599f2674
-  Correlation Id:          5d018cc9ea49081149d4c331182d99da
-  External correlation Id: 1154673755867140131
-  Machine Id:              K8MaC0oBMJOGUWolTY+fiYMGaOw=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Ivanj-6000.4.6" (connect: 0.01s, validation: 0.00s, handshake: 0.01s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Ivanj-6000.4.6-notifications" at "2026-05-15T19:29:55.9641173Z"
-[Licensing::Module] Licensing Background thread has ended after 2.46s
+Registered in 0.002812 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -135,23 +118,40 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.518 seconds
-Domain Reload Profiling: 1163ms
-	BeginReloadAssembly (245ms)
-	RebuildCommonClasses (48ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (90ms)
-	LoadAllAssembliesAndSetupDomain (246ms)
-		LoadAssemblies (238ms)
-		AnalyzeDomain (237ms)
-			TypeCache.Refresh (236ms)
-				TypeCache.ScanAssembly (221ms)
-	FinalizeReload (520ms)
+- Finished resetting the current domain, in  0.350 seconds
+Domain Reload Profiling: 731ms
+	BeginReloadAssembly (108ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (176ms)
+		LoadAssemblies (104ms)
+		AnalyzeDomain (168ms)
+			TypeCache.Refresh (167ms)
+				TypeCache.ScanAssembly (154ms)
+	FinalizeReload (351ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (59ms)
-			BeforeProcessingInitializeOnLoad (111ms)
-			ProcessInitializeOnLoadAttributes (165ms)
-			ProcessInitializeOnLoadMethodAttributes (114ms)
+			InitializePlatformSupportModulesInManaged (42ms)
+			BeforeProcessingInitializeOnLoad (77ms)
+			ProcessInitializeOnLoadAttributes (94ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Ivanj"
+[Licensing::IpcConnector] LicenseClient-Ivanj channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Ivanj-6000.4.6" at "2026-06-19T10:56:16.4829659Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 37376, path: "C:/Program Files/Unity/Hub/Editor/6000.4.6f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              974ef315857043a0b2952b045cead525
+  Correlation Id:          788930d0f98973b13d3204dce7051ec2
+  External correlation Id: 2954773076660699442
+  Machine Id:              K8MaC0oBMJOGUWolTY+fiYMGaOw=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Ivanj-6000.4.6" (connect: 0.00s, validation: 0.00s, handshake: 0.01s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Ivanj-6000.4.6-notifications" at "2026-06-19T10:56:16.4956355Z"
+[Licensing::Module] Licensing Background thread has ended after 1.85s
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
@@ -163,7 +163,9 @@ Begin MonoManager ReloadAssembly
   Type: Assigned
   Expiration: Unlimited
 Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-Editor.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor.dll not valid. Loading of assembly skipped.
 Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp.dll at Library/ScriptAssemblies/Assembly-CSharp.dll not valid. Loading of assembly skipped.
 Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
 Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
 Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
@@ -191,94 +193,45 @@ Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Un
 Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
 Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Symbol file LoadedFromMemory is not a mono symbol file
-Refreshing native plugins compatible for Editor in 3.97 ms, found 8 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 3.67 ms, found 8 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.813 seconds
-Domain Reload Profiling: 2027ms
-	BeginReloadAssembly (234ms)
-		DisableScriptedObjects (7ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (118ms)
-	LoadAllAssembliesAndSetupDomain (797ms)
-		LoadAssemblies (574ms)
-		AnalyzeDomain (344ms)
-			TypeCache.Refresh (232ms)
-				TypeCache.ScanAssembly (211ms)
-			BuildScriptInfoCaches (96ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (813ms)
+- Finished resetting the current domain, in  0.515 seconds
+Domain Reload Profiling: 1225ms
+	BeginReloadAssembly (154ms)
+		DisableScriptedObjects (4ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (453ms)
+		LoadAssemblies (337ms)
+		AnalyzeDomain (200ms)
+			TypeCache.Refresh (138ms)
+				TypeCache.ScanAssembly (126ms)
+			BuildScriptInfoCaches (55ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (515ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			BeforeProcessingInitializeOnLoad (143ms)
-			ProcessInitializeOnLoadAttributes (298ms)
-			ProcessInitializeOnLoadMethodAttributes (71ms)
-			AfterProcessingInitializeOnLoad (9ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 4.85 ms, found 8 plugins.
+			BeforeProcessingInitializeOnLoad (100ms)
+			ProcessInitializeOnLoadAttributes (207ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
+			AfterProcessingInitializeOnLoad (5ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6620 unused Assets / (5.5 MB). Loaded Objects now: 7443.
-Memory consumption went from 171.9 MB to 166.4 MB.
-Total: 8.700000 ms (FindLiveObjects: 0.996200 ms CreateObjectMapping: 0.299000 ms MarkObjects: 5.356700 ms  DeleteObjects: 2.043400 ms)
+Unloading 6564 unused Assets / (4.9 MB). Loaded Objects now: 7388.
+Memory consumption went from 157.9 MB to 153.1 MB.
+Total: 6.167300 ms (FindLiveObjects: 1.069300 ms CreateObjectMapping: 0.356300 ms MarkObjects: 3.254900 ms  DeleteObjects: 1.485100 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 18404.911937 seconds.
-  path: Assets/Scenes/0.unity
-  importAddress: Guid(fd97409c2330c6b42808d92e246de7a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/0.unity using Guid(fd97409c2330c6b42808d92e246de7a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '99df1d68667c3ffe3e6a7038334f20e8') in 0.0895294 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=44a0667e3f626a61583700c0e7058cc7 DependenciesID=7adb5a0e5316dac239651c7dd6892ce2 StaticDependenciesID=0f0798bb94e66ecea8121b6801bddfdd 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Settings/UniversalRenderPipelineGlobalSettings.asset
-  importAddress: Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Settings/UniversalRenderPipelineGlobalSettings.asset using Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a527796de443191b44575cf82ab675ee') in 0.0949432 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=60acea4a56cff17ed82c9bb9a2fbbca6 DependenciesID=86949a3a6a63897b7ec984f747f431aa StaticDependenciesID=fcb8e25c555df5b852551a2e649db5ab 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.730315 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  importAddress: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd2416de47d22ca78e18dcc56ad81acef') in 0.001054 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f3af80aa444126da7ef9e80fc4827f87 DependenciesID=c283071ad4b630928a63d51c22dd76b2 StaticDependenciesID=9645cbbfc8436b6d009cabc02ad6bd8a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 66.858699 seconds.
-  path: Assets/Scenes/0.unity
-  importAddress: Guid(fd97409c2330c6b42808d92e246de7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/0.unity using Guid(fd97409c2330c6b42808d92e246de7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a59b8c61d1bed5825245e058f8c8ec5e') in 0.0007099 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0f0274de10ee20a8c50e0dea3d65bb19 DependenciesID=bbc799810ff82024539a6e1e7ac51ce2 StaticDependenciesID=edb5a557ac8ea9c5e1629686e21c9124 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.149644 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  importAddress: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '836ddc974602a5c220b1ea9cee2c53f0') in 0.0309281 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=203be723854e4474260dd71672b04b4d DependenciesID=9e6e6f1b7def9511d7dbc77002a2a7d9 StaticDependenciesID=613cb4bec059c8234ab170283770536c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 42.951188 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  importAddress: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c89254b549f6ef0f91a27a144d6dad2d') in 0.0566996 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=68c00ee7739ffc90a5b2af7bc215e3b6 DependenciesID=cea94c684b5efec115565069d0c2fca2 StaticDependenciesID=eb92bc3db3613d12d717c92c72458643 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

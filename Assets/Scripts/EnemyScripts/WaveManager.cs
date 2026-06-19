@@ -41,6 +41,13 @@ public class WaveManager : MonoBehaviour
         {
             player.position =
                 playerResetPosition;
+            PlayerStats stats =
+                player.GetComponent<PlayerStats>();
+
+            if (stats != null)
+            {
+                stats.ResetStatsForNewWave();
+            }
 
             Rigidbody rb =
                 player.GetComponent<Rigidbody>();

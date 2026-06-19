@@ -4,7 +4,6 @@ public class PlayerAttack : MonoBehaviour
 {
     [Header("Attack Settings")]
     [SerializeField] private float attackRange = 4f;
-    [SerializeField] private int damage = 2;
     [SerializeField] private float attackCooldown = 0.5f;
 
     [Header("Layers")]
@@ -14,6 +13,13 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private GameObject weaponSwingPrefab;
 
     private float cooldownTimer;
+
+    private PlayerStats stats;
+
+    private void Start()
+    {
+        stats = GetComponent<PlayerStats>();
+    }
 
     private void Update()
     {
@@ -34,14 +40,14 @@ public class PlayerAttack : MonoBehaviour
 
         SpawnWeaponSwing();
 
+        int damage = stats != null ? stats.GetDamage() : 2;
+
         Collider[] enemies =
             Physics.OverlapSphere(
                 transform.position,
                 attackRange,
                 enemyLayer
             );
-
-       
 
         foreach (Collider enemy in enemies)
         {
@@ -51,8 +57,6 @@ public class PlayerAttack : MonoBehaviour
             if (enemyBase != null)
             {
                 enemyBase.TakeDamage(damage);
-
-               
             }
         }
     }
@@ -69,17 +73,6 @@ public class PlayerAttack : MonoBehaviour
                 Quaternion.identity
             );
 
-        // Parent to player
         swing.transform.SetParent(transform);
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-
-        Gizmos.DrawWireSphere(
-            transform.position,
-            attackRange
-        );
     }
 }

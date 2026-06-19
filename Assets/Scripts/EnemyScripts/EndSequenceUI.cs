@@ -91,7 +91,6 @@ public class EndSequenceUI : MonoBehaviour
 
     private void Start()
     {
-        // BUTTON SETUP
         if (nextWaveButton != null)
         {
             nextWaveButton.SetActive(false);
@@ -102,14 +101,12 @@ public class EndSequenceUI : MonoBehaviour
             nextWaveCanvasGroup.alpha = 0f;
         }
 
-        // TEXT SETUP
         textStartPosition =
             fortuneTextTransform.anchoredPosition;
 
         fortuneTextTransform.localScale =
             Vector3.zero;
 
-        // IMAGE SETUP
         if (slideImage != null)
         {
             imageTargetPosition =
@@ -199,7 +196,6 @@ public class EndSequenceUI : MonoBehaviour
         {
             timer += Time.unscaledDeltaTime;
 
-            // SCALE
             float scaleT =
                 Mathf.Clamp01(
                     timer / scaleDuration);
@@ -214,7 +210,7 @@ public class EndSequenceUI : MonoBehaviour
                     scaleEval
                 );
 
-            // MOVE
+            
             float moveT =
                 Mathf.Clamp01(
                     timer / moveDuration);
@@ -236,17 +232,15 @@ public class EndSequenceUI : MonoBehaviour
             yield return null;
         }
 
-        // SHOW + FADE BUTTON
         if (nextWaveButton != null)
         {
-            nextWaveButton.SetActive(true);
+            nextWaveButton.SetActive(true); 
         }
 
         if (nextWaveCanvasGroup != null)
         {
-            yield return StartCoroutine(
-                FadeInButton()
-            );
+            nextWaveCanvasGroup.alpha = 0f; 
+            yield return StartCoroutine(FadeInButton());
         }
     }
 

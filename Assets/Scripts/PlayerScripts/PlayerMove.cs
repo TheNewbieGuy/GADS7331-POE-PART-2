@@ -3,19 +3,22 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMove : MonoBehaviour
 {
+    [Header("References")]
+    [SerializeField] private PlayerStats stats;
+
     [Header("Movement")]
-    [SerializeField] private float moveSpeed = 6f;
     [SerializeField] private float rotationSpeed = 15f;
 
     private Rigidbody rb;
-
     private Vector3 moveDirection;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-
         rb.freezeRotation = true;
+
+        if (stats == null)
+            stats = GetComponent<PlayerStats>();
     }
 
     private void Update()
@@ -34,8 +37,10 @@ public class PlayerMove : MonoBehaviour
 
     private void Move()
     {
+        float speed = stats != null ? stats.GetMoveSpeed() : 6f;
+
         Vector3 movement =
-            moveDirection * moveSpeed * Time.fixedDeltaTime;
+            moveDirection * speed * Time.fixedDeltaTime;
 
         rb.MovePosition(rb.position + movement);
     }

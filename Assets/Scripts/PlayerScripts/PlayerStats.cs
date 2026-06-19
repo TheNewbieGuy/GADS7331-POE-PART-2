@@ -2,115 +2,108 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    [Header("Health")]
-    [SerializeField] private int health = 100;
+    [Header("Base Stats (Original Values)")]
+    [SerializeField] private int baseHealth = 50;
+    [SerializeField] private int baseMaxHealth = 50;
+    [SerializeField] private int baseDamage = 1;
+    [SerializeField] private float baseMoveSpeed = 5f;
 
-    [SerializeField] private int maxHealth = 100;
+    [Header("Current Stats")]
+    [SerializeField] private int health;
+    [SerializeField] private int maxHealth;
+    [SerializeField] private int damage;
+    [SerializeField] private float moveSpeed;
 
-    [Header("Damage")]
-    [SerializeField] private int damage = 75;
+    [Header("Limits")]
+    [SerializeField] private float minMoveSpeed = 3f;
+    [SerializeField] private float maxMoveSpeed = 8f;
 
-    [Header("Weapon")]
-    [SerializeField] private GameObject PlayerWeapon;
+    [SerializeField] private int minHealth = 25;
+    [SerializeField] private int maxHealthLimit = 150;
+
+    [SerializeField] private float damageCooldown = 0.5f;
+    private float lastDamageTime;
 
     [Header("Death UI")]
     [SerializeField] private GameObject deathUI;
 
     private bool isDead;
 
-    void Start()
+    private void Start()
     {
-        if (PlayerWeapon != null)
-        {
-            PlayerWeapon.SetActive(false);
-        }
-
-        if (deathUI != null)
-        {
-            deathUI.SetActive(false);
-        }
+        ResetToBaseStats();
     }
 
-    public void takedamage(int damageAmount)
+    public void ResetToBaseStats()
     {
-        if (isDead)
+        health = Mathf.Clamp(baseHealth, minHealth, maxHealthLimit);
+        maxHealth = Mathf.Clamp(baseMaxHealth, minHealth, maxHealthLimit);
+
+        damage = baseDamage;
+
+        moveSpeed = Mathf.Clamp(baseMoveSpeed, minMoveSpeed, maxMoveSpeed);
+
+        isDead = false;
+        Time.timeScale = 1f;
+
+        if (deathUI != null)
+            deathUI.SetActive(false);
+    }
+
+    public void takedamage(int amount)
+    {
+        if (isDead) return;
+
+        if (Time.time < lastDamageTime + damageCooldown)
             return;
 
-        health -= damageAmount;
+        lastDamageTime = Time.time;
 
-        // prevent negative health
-        if (health < 0)
-        {
-            health = 0;
-        }
+        health -= amount;
+        health = Mathf.Max(0, health);
 
         if (health <= 0)
-        {
             Die();
-        }
     }
 
     private void Die()
     {
         isDead = true;
-
-        Debug.Log("Player has died.");
-
         Time.timeScale = 0f;
 
         if (deathUI != null)
-        {
             deathUI.SetActive(true);
-        }
     }
 
-    public void Heal(int healAmount)
+    public void ApplyStatChange(int hp, int dmg, float speed)
     {
-        health += healAmount;
+        maxHealth = Mathf.Clamp(maxHealth + hp, minHealth, maxHealthLimit);
+        health = Mathf.Clamp(health + hp, minHealth, maxHealthLimit);
 
-        if (health > maxHealth)
-        {
-            health = maxHealth;
-        }
+        damage = Mathf.Clamp(damage + dmg, 1, 8);
+        moveSpeed = Mathf.Clamp(moveSpeed + speed, minMoveSpeed, maxMoveSpeed);
     }
 
     public void ResetStatsForNewWave()
     {
-        health = maxHealth;
-
+        health = Mathf.Clamp(maxHealth, minHealth, maxHealthLimit);
         isDead = false;
 
+        Time.timeScale = 1f;
+
         if (deathUI != null)
-        {
             deathUI.SetActive(false);
-        }
     }
 
-    public void Attack()
+    public void DebugPrintStats()
     {
-        if (PlayerWeapon != null)
-        {
-            PlayerWeapon.SetActive(true);
-
-            Debug.Log(
-                "Player attacks with " +
-                PlayerWeapon.name
-            );
-        }
+        Debug.Log(
+            "PLAYER STATS => " +
+            "HP: " + health + "/" + maxHealth +
+            " | DMG: " + damage +
+            " | SPEED: " + moveSpeed
+        );
     }
-
-    public void not_attacking()
-    {
-        if (PlayerWeapon != null)
-        {
-            PlayerWeapon.SetActive(false);
-
-            Debug.Log(
-                "Player is not attacking."
-            );
-        }
-    }
-
     public int GetCurrentHealth()
     {
         return health;
@@ -120,9 +113,6 @@ public class PlayerStats : MonoBehaviour
     {
         return maxHealth;
     }
-
-    public int GetDamage()
-    {
-        return damage;
-    }
+    public int GetDamage() => damage;
+    public float GetMoveSpeed() => moveSpeed;
 }

@@ -42,7 +42,16 @@ public class MeleeEnemy : EnemyBase
             yield return null;
         }
 
+        EnemyPowerup powerup =
+            GetComponent<EnemyPowerup>();
+
+        if (powerup == null)
+        {
+            yield break;
+        }
+
         yield return OllamaManager.Instance.GenerateFortune(
+            powerup.powerUp,
             (result) =>
             {
                 fortune = result;
@@ -82,8 +91,7 @@ public class MeleeEnemy : EnemyBase
 
         if (distance > attackRange)
         {
-            rb.linearVelocity =
-                direction * moveSpeed;
+            rb.linearVelocity = direction * GetMoveSpeed();
         }
         else
         {
@@ -91,6 +99,54 @@ public class MeleeEnemy : EnemyBase
 
             Attack();
         }
+    }
+    public void ApplyInheritedKnockback(Vector3 force)
+    {
+        if (isKnockedBack)
+            return;
+
+        StartCoroutine(InheritedKnockbackRoutine(force));
+    }
+    private IEnumerator InheritedKnockbackRoutine(Vector3 force)
+    {
+        isKnockedBack = true;
+
+        rb.linearVelocity = Vector3.zero;
+
+        rb.AddForce(force, ForceMode.Impulse);
+
+        yield return new WaitForSeconds(knockbackDuration);
+
+        isKnockedBack = false;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (!isKnockedBack)
+            return;
+
+        MeleeEnemy otherEnemy =
+            collision.gameObject.GetComponent<MeleeEnemy>();
+
+        if (otherEnemy == null)
+            return;
+
+        if (otherEnemy == this)
+            return;
+
+        if (otherEnemy.isKnockedBack)
+            return;
+
+        Vector3 currentVelocity = rb.linearVelocity;
+
+        if (currentVelocity.magnitude < 0.5f)
+            return;
+
+        Vector3 transferredForce =
+            currentVelocity * 1f;
+
+        otherEnemy.ApplyInheritedKnockback(
+            transferredForce
+        );
     }
 
     private void Attack()
