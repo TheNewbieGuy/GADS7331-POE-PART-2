@@ -49,7 +49,6 @@ public class OllamaManager : MonoBehaviour
         {
             Debug.Log("Ollama connected!");
 
-            // warm up model
             StartCoroutine(
                 GenerateFortune(
                     EnemyPowerup.PowerUpType.SpeedBoost,
@@ -105,13 +104,21 @@ public class OllamaManager : MonoBehaviour
         if (player.GetMoveSpeed() > 5f)
             validModifiers.Add(EnemyModifier.Fast);
 
-        if (player.GetCurrentHealth() > 75)
+        if (player.GetCurrentHealth() > 75f)
             validModifiers.Add(EnemyModifier.Strong);
 
-        if (player.GetDamage() > 1f)
+        if (player.GetDamage() > 2f)
             validModifiers.Add(EnemyModifier.Tanky);
 
-        validModifiers.Add(EnemyModifier.None);
+        bool atBaseStats =
+            player.GetDamage() == 2f && 
+            player.GetMoveSpeed() == 5f &&
+            player.GetCurrentHealth() == 75f;
+
+        if (atBaseStats)
+        {
+            validModifiers.Add(EnemyModifier.None);
+        }
 
         string prompt =
             "Player current stats:\n" +
@@ -182,19 +189,19 @@ public class OllamaManager : MonoBehaviour
         switch (powerup)
         {
             case EnemyPowerup.PowerUpType.SpeedBoost:
-                prompt = "Generate ONE short quote or statement about speed. Max 5 words. In quotation marks. Do not include the author of the quote.";
+                prompt = "Generate ONE short quote about speed. Max 5 words. In quotation marks. Do not include the author of the quote.";
                 break;
 
             case EnemyPowerup.PowerUpType.DamageBoost:
-                prompt = "Generate ONE short quote or statement about strength. Max 5 words. In quotation marks. Do not include the author of the quote.";
+                prompt = "Generate ONE short quote about strength. Max 5 words. In quotation marks. Do not include the author of the quote.";
                 break;
 
             case EnemyPowerup.PowerUpType.HealthBoost:
-                prompt = "Generate ONE short quote or statement about health. Max 5 words. In quotation marks. Do not include the author of the quote.";
+                prompt = "Generate ONE short quote about health. Max 5 words. In quotation marks. Do not include the author of the quote.";
                 break;
 
             case EnemyPowerup.PowerUpType.Weakness:
-                prompt = "Generate ONE short quote or statement about weakness. Max 5 words. In quotation marks. Do not include the author of the quote.";
+                prompt = "Generate ONE short quote about weakness. Max 5 words. In quotation marks. Do not include the author of the quote.";
                 break;
         }
 

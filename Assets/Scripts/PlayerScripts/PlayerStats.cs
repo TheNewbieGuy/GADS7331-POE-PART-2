@@ -1,7 +1,8 @@
 using UnityEngine;
-
+using TMPro;
 public class PlayerStats : MonoBehaviour
 {
+    
     [Header("Base Stats (Original Values)")]
     [SerializeField] private int baseHealth = 50;
     [SerializeField] private int baseMaxHealth = 50;
@@ -26,7 +27,7 @@ public class PlayerStats : MonoBehaviour
 
     [Header("Death UI")]
     [SerializeField] private GameObject deathUI;
-
+    [SerializeField] private TextMeshProUGUI deathWaveText;
     private bool isDead;
 
     private void Start()
@@ -70,6 +71,13 @@ public class PlayerStats : MonoBehaviour
     {
         isDead = true;
         Time.timeScale = 0f;
+        if (deathWaveText != null &&
+            WaveManager.Instance != null)
+        {
+            deathWaveText.text =
+                "Wave " +
+                WaveManager.Instance.GetCurrentWave();
+        }
 
         if (deathUI != null)
             deathUI.SetActive(true);

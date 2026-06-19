@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using TMPro;
 public class WaveManager : MonoBehaviour
 {
     public static WaveManager Instance;
@@ -8,7 +8,7 @@ public class WaveManager : MonoBehaviour
     [SerializeField] private EnemyFactory enemyFactory;
 
     [SerializeField] private Transform player;
-
+    [SerializeField] private TextMeshProUGUI waveText;
     [Header("Player Reset")]
     [SerializeField]
     private Vector3 playerResetPosition =
@@ -25,10 +25,25 @@ public class WaveManager : MonoBehaviour
     {
         Instance = this;
     }
-
+    private void UpdateWaveUI()
+    {
+        if (waveText != null)
+        {
+            waveText.text = "Wave " + currentWave;
+        }
+    }
+    private void Start()
+    {
+        UpdateWaveUI();
+    }
+    public int GetCurrentWave()
+    {
+        return currentWave;
+    }
     public void StartNextWave()
     {
         currentWave++;
+        UpdateWaveUI();
 
         Debug.Log(
             "STARTING WAVE: " +
